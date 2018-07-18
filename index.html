@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- IE Compatible Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile First Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>الرقم القومي المصرى</title>
+    <!-- File Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+    <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <section class="">
+        <div class="container">
+            <h1 class="text-center"> <i class="fa fa-id-card"></i> الرقم القومي المصرى</h1>
+            <label for="">اكتب الرقم هنا</label>
+            <input type="" class="input-lg center-block form-control" name="" value="" placeholder="أدخل الرقم القومى الخاص بك هنا" maxlength="14" id="input">
+            <button type="" class="btn btn-primary btn-lg mybtn col-md-6 col-xs-12" id="btn">إظهار النتائج <i class="fa fa-search fa-flip-horizontal"></i></button>
+            <div class="clearfix"></div>
+            <div class="alertmesg text-center hidebyme" id="alertmasg">
+                <div class="container">
+                    <i class="fa fa-exclamation-circle " style="color: #252839;"></i> هناك خطأ يرجى التأكد من الرقم القومي
+                    <button class="btn btn-lg btn-primary" onclick="tryfun()"> حاول مره آخرى </button>
+                </div>
+            </div>
+            <div class="result hidebyme">
+                <h2>المعلومات الخاصه بك :</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <span id="one"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <span id="two">أنت من مواليد عام : <span id="year"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <span id="three">أنت من مواليد شهر : <span id="month"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <span id="four">أنت من مواليد يوم : <span id="day"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <span id="five">تاريخ ميلادك هو : <span id="birth"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <span id="seven">أنت من محافظة : <span id="Governorate"></span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <div id="eghit">محافظة ( <span id="Governoratetwo"></span> ) على خرائط جوجل </div>
+                                <div id="map" style="width:100%;height:300px;background:rgb(242, 182, 50)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="parent">
+                            <div class="child">
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">مرحبا بك</h4>
+                                        <span id="six">أنت <span id="sex">: ذكر</span></span> <br>
+                                        <span>أنت <span id="age"></span> من العمر : <span id="allage">17 عاما</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <button class="btn btn-lg btn-primary" onclick="tryfun()"> حاول مره آخرى </button>
+            </div>
+        </div>
+    </section>
+    <div class="explane">
+        <div class="container">
+            <h3>ابحث عن الرقم القومي</h3>
+            <p class="lead">
+                بإمكانك البحث عن معلومات دقيقه عن اى شخص أو حتى عنك عبر الرقم القومي فقط بالإضافة أنه بإمكانك معرفة أكثر من شئ عن الرقم القوي حيث تستطيع معرقة القرن و العام و الشهر و اليوم اى الميلاد المسئول الخاص بالرقم القومي و أيضا معرفة مكان الولاده و معرفة سن الشخص
+                أيضا و يمكنك معرفة نوع الجنس ذكر أم أنثى من الرقم القومي الخاص بك أيضا ماذا تنتظر جرب الأن :)
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <h2 class="h1">موقع يعطيك كل التفاصيل عبر <small>الرقم القومي</small></h1>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFmpK1G3GLbFiMnhktUz9e1-MoByn6nQU&callback=initMap" async defer></script>
+    <script src="js/script.js"></script>
+    <script>
+        function initMap() {
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: Governoratessite[GovernoratesNum.indexOf(input.value.slice(7, 9))],
+                scrollwheel: false,
+                zoom: 9
+            });
+        }
+    </script>
+</body>
+
+</html>
